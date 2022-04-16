@@ -1,0 +1,10 @@
+src/
+vendor/
+node_module/
+gulpfile.js
+package.json
+package-lock.json
+.env
+.vscode/
+.eslintrc.json
+

@@ -1,0 +1,29 @@
+{
+    "name": "luis/app-salon",
+    "description": "php8, Gulp, npm, SASS, JS, HTML, SQL",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "MVC\\" : "./",
+            "Controllers\\" : "./controllers",
+            "Model\\" : "./models",
+            "Classes\\" : "./classes"
+        }
+    },
+    "authors": [
+        {
+            "name": "luisBRK",
+            "email": "laberrezueta2@protonmail.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.6",
+        "ext-mysqli": "*",
+        "ext-json": "*",
+        "vlucas/phpdotenv": "^5.4"
+    }
+    ,
+    "require-dev": {
+        "roave/security-advisories": "dev-latest"
+    }
+}
