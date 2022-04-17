@@ -65,7 +65,7 @@ class Email{
         $content .= "<p>hello <span>" . $this->name . "</span>,</p>";
         $content .= "<p>Thanks for create your account, please validate your account with the link.</p>";
         $content .= "<p>Click in the link:</p>";
-        $content .= "<a href='https://appbarberluis.herokuapp.com/confirm-account?token=" . $this->token ."'>Confirm my account</a>";
+        $content .= "<a href='https://desolate-eyrie-96468.herokuapp.com/confirm-account?token=" . $this->token ."'>Confirm my account</a>";
         $content .= "<p>If you didn't ask for this account, please ignore this email.</p>";
         $content .= '</body>';
         $content .= '</html>';
@@ -122,7 +122,7 @@ class Email{
         $content .= "<h1><strong>Recover your password</strong></h1>";
         $content .= "<p>hello <span>" . $this->name . "</span>,</p>";
         $content .= "<p>Click in the link to reset your password:</p>";
-        $content .= "<a href='https://appbarberluis.herokuapp.com/recover-password?token=" . $this->token ."'>Reset my account</a>";
+        $content .= "<a href='https://desolate-eyrie-96468.herokuapp.com/recover-password?token=" . $this->token ."'>Reset my account</a>";
         $content .= "<p>If you didn't ask for this account, please ignore this email.</p>";
         $content .= '</body>';
         $content .= '</html>';
