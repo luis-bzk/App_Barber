@@ -38,7 +38,7 @@ When you set your reservation, a message will appear on screen, 3 seconds late r
 
 If you a re an admin, you can see any date for an appointment, default, the app shows the present day, if are reservation it shows you, else show a message.
 You can navigate for different dates.
-<img src="PicturesDemost/Adminhome.png.png" alt="home of admin"  />
+<img src="PicturesDemost/Adminhome.png" alt="home of admin"  />
 
 ## Chane services
 An admin can update a data service or delete any service.
