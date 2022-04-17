@@ -32,9 +32,11 @@ class Email{
         $mail->Port = 2525;
 
 
+
+
         // email content
         $mail->setFrom('cuentas@app-barber.com');
-        $mail->addAddress('cuentas@appsalon.com', 'AppBarber.com');
+        $mail->addAddress($this->mail, 'AppBarber.com');
         $mail->Subject = "Confirm your account";
         //set HTML
         $mail->isHTML(TRUE);
@@ -63,7 +65,7 @@ class Email{
         $content .= "<p>hello <span>" . $this->name . "</span>,</p>";
         $content .= "<p>Thanks for create your account, please validate your account with the link.</p>";
         $content .= "<p>Click in the link:</p>";
-        $content .= "<a href='http://localhost:3000/confirm-account?token=" . $this->token ."'>Confirm my account</a>";
+        $content .= "<a href='https://appbarberluis.herokuapp.com/confirm-account?token=" . $this->token ."'>Confirm my account</a>";
         $content .= "<p>If you didn't ask for this account, please ignore this email.</p>";
         $content .= '</body>';
         $content .= '</html>';
@@ -120,7 +122,7 @@ class Email{
         $content .= "<h1><strong>Recover your password</strong></h1>";
         $content .= "<p>hello <span>" . $this->name . "</span>,</p>";
         $content .= "<p>Click in the link to reset your password:</p>";
-        $content .= "<a href='http://localhost:3000/recover-password?token=" . $this->token ."'>Reset my account</a>";
+        $content .= "<a href='https://appbarberluis.herokuapp.com/recover-password?token=" . $this->token ."'>Reset my account</a>";
         $content .= "<p>If you didn't ask for this account, please ignore this email.</p>";
         $content .= '</body>';
         $content .= '</html>';
